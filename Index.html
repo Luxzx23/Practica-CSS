@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!--Indica que el documento está escrito en HTML5.-->
+
+<html lang="es"> <!--Abre el elemento  y establece que el idioma principal del documento es español (es)-->
+
+<head> <!--inicia la sesiòn de informaciòn o contenido del archivo -->
+    <meta charset="utf-8"> <!--garantiza que el contenido del sitio web se muestre correctamente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--configura la visualizaciòn en dispositivos moviles -->
+    <title>Make up.lu</title> <!--establece el titulo del doc que se muestra en la barra de titulo del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!--enlaza un archivo de hoja de estilos css -->
+</head>
+<body> <!-- Inicia la seccion del contenido del doc HTML -->
+    <header> <!--Inicia la seccion de encabezado del doc -->
+        <h1 style="color: pink;">MAKE UP</h1> <!--Establece un titulo de nivel 1 -->
+    </header> <!--Cierra la sesiòn de encabezado -->
+    <main> <!--inicia la seccion principal del doc-->
+        <section id="inicio" class="contenedor visible"> <!--Inicia una seccion con el id "inicio" y las clases "contenedor visible" -->
+            <button onclick="mostrarSeccion('sesion1')">Sesión 1</button> <!--crea un boton con el texto "sesion 1" que, al hacer clic en èl, llama a la funcion "mostrarSeccion"  -->
+            <button onclick="mostrarSeccion('sesion2')">Sesión 2</button> <!--crea un boton con el texto "sesion 1" que, al hacer clic en èl, llama a la funcion "mostrarSeccion -->
+            <button onclick="mostrarSeccion('sesion3')">Sesión 3</button> <!--crea un boton con el texto "sesion 1" que, al hacer clic en èl, llama a la funcion "mostrarSeccion -->
+            <button onclick="mostrarSeccion('sesion4')">Sesión 4</button> <!--crea un boton con el texto "sesion 1" que, al hacer clic en èl, llama a la funcion "mostrarSeccion -->
+        </section> <!--cierra la sesion de contenido -->
+        <section id="sesion1" class="contenedor"> <!--con una lista ordenada y un botón para volver a la sección de inicio. -->
+
+            <span style="background-color: #FFFF99; padding: 10px;">MENÙ</span>
+  <!--Define un encabezado de nivel 2 en HTML,se utiliza para subtítulos secundarios dentro del contenido de la página.-->
+            <ol> <!--se crea una lista ordenada -->
+                <li>Facial</li> <!--lista 1 -->
+                <li>Corporal</li> <!--lista 2 -->
+                <li>Tratamientos capilares</li> <!--lista 3 -->
+            </ol> <!--se cierra la sesion de listas ordenadas -->
+            <button onclick="mostrarSeccion('inicio')">Volver</button> <!-- se define un botón para volver a la sección de inicio. -->
+        </section> <!--se cierra la sesion -->
+         <section id="sesion2" class="contenedor"> <!--se utiliza para definir una sección dentro de un documento. -->
+            <span style="background-color: #FFFF99; padding: 3px;">MIS PRODUCTOS</span> <!--Define un encabezado de nivel 2 en HTML,se utiliza para subtítulos secundarios dentro del contenido de la página -->
+            <ul> <!-- -->
+                <li>Maquillaje</li> <!--lista 1 -->
+                <li>Cremas</li> <!--lista 2 -->
+                <li>Tratamientos</li> <!--lista 3 -->
+            </ul> <!-- -->
+            <button onclick="mostrarSeccion('inicio')">Volver</button> <!--boton para volver al incio -->
+        </section> <!-- -->
+        <section id="sesion3" class="contenedor"> <!--define una sección dentro de un documento HTML con dos atributos importantes "id" y "class" -->
+            <span style="background-color: #FFC0CB; padding: 3px;">MERCANCIA</span> <!-- -->
+            <table> <!-- -->
+                <thead> <!-- -->
+                    <tr> <!-- -->
+                        <th>Maquillaje</th> <!-- -->
+                        <th>Cremas</th> <!-- -->
+                        <th>Tratamientos</th> <!-- -->
+                    </tr> <!-- -->
+                </thead> <!-- -->
+                <tbody><!-- -->
+                    <tr> <!-- -->
+                        <td>brochas</td><!-- -->
+                        <td>crema red</td><!-- -->
+                        <td>mascarilla nutric</td><!-- -->
+                    </tr><!-- -->
+                    <tr><!-- -->
+                        <td>labiales</td><!-- -->
+                        <td>crema way</td><!-- -->
+                        <td>crema de peinar</td><!-- -->
+                    </tr><!-- -->
+                </tbody><!-- -->
+            </table><!-- -->
+            <button onclick="mostrarSeccion('inicio')">Volver</button><!-- -->
+        </section><!-- -->
+        <section id="sesion4" class="contenedor"> <!--Contiene un formulario para capturar datos, como nombre, correo, género y país. Incluye validaciones básicas (required) y un botón para enviar la información.--> 
+             <span style="background-color: #FFC0CB; padding: 3px;">INSCRIBETE PARA NO PERDERTE NINGUNA NOVEDAD</span> <!-- -->
+            <form><!-- -->
+                <label for="nombre">Nombre:</label><!--Indica que el texto "Nombre:" es la etiqueta para el campo de entrada de nombre. -->
+                <input id="nombre" name="nombre" type="text" required><!--En este caso, el texto "Nombre:" está asociado al campo de entrada con id="nombre". -->
+                <label for="email">Correo Electrónico:</label><!--La etiqueta "Correo Electrónico:" se asocia con el campo de entrada para el correo electrónico.
+ -->
+                <input id="email" name="email" type="email" required><!--En este caso, el texto "email:" está asociado al campo de entrada con id="email". -->
+                <fieldset> <!--Agrupa campos relacionados del formulario dentro de un recuadro con un borde (por defecto), lo que facilita al usuario entender que esos campos están conectados.
+ -->
+                    <legend>Género:</legend><!--Define el título del grupo de controles que permite al usuario seleccionar el género -->
+                    <label><input name="genero" type="radio" value="masculino"> Masculino</label><!--Botón de opción para seleccionar "Masculino" como género. -->
+                    <label><input name="genero" type="radio" value="femenino"> Femenino</label><!--Botón de opción para seleccionar "Femenino" como género. -->
+                </fieldset><!--cierre de esta sesion -->
+                <label for="pais">País:</label><!-- -->
+                <select id="pais" name="pais"><!--Representa un menú desplegable que permite al usuario seleccionar una opción de una lista, en este caso de paìses -->
+                    <option value="mx">México</option><!--opcion 1 -->
+                    <option value="us">Estados Unidos</option><!--opcion 2 -->
+                    <option value="es">España</option><!--opcion 3 -->
+                </select><!--se cierra esta sesion -->
+                <button type="submit">Enviar</button><!--boton para enviar el formulario -->
+            </form><!--se utiliza para cerrar un formulario HTML -->
+            <button onclick="mostrarSeccion('inicio')">Volver</button><!--boton para volver al inicio -->
+        </section><!--cierre de sesiòn -->
+    </main><!--a etiqueta </main> se utiliza para cerrar el contenido principal de una página web. -->
+    <footer><!--La etiqueta <footer> se utiliza para definir el pie de página de un documento HTML o de una sección específica dentro de un documento. -->
+        <p>&copy; 2024 Derechos Reservados</p><!--define un pàrrafo -->
+    </footer><!--cierre de la etiqueta -->
+    <script> 
+        function mostrarSeccion(seccionId) {<!-- -->
+            document.querySelectorAll('.contenedor').forEach((seccion) => {
+                seccion.classList.remove('visible');<!-- -->
+            });
+            document.getElementById(seccionId).classList.add('visible');
+        }
+    </script><!--cierre de etiqueta -->
+</body><!--final del cuerpo de pagina -->
+</html><!--fin del doc. -->
+
+
+
+
+
+
+
+
+
+
+
+

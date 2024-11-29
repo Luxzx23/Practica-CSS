@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; 
+    color: ;
+    margin: 5px;
+    min-height: 100vh;
+    padding: 0;
+    text-align: center;  
+    background-image: url(tu.gif);
+}
+
+header, footer {
+    background-color: #666666;
+    color: #fff;
+    padding: 10px 0;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.contenedor {
+    display: none;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.contenedor.visible {
+    display: block;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #FF99CC;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #00509e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    background-color: #87CEEB;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #FFFF99;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #FFC0CB;
+}
+
+ul, ol {
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: left;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
